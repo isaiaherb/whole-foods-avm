@@ -9,7 +9,7 @@ from model import generate_synthetic_data, load_and_preprocess_data
 st.logo('northbow.png')
 
 # Load and prepare the data
-df = load_and_preprocess_data('/Users/isaiaherb/Desktop/Northbow/Whole Foods/Data/WholeFoodsTrain.csv')
+df = load_and_preprocess_data('WholeFoodsTrain.csv')
 df_synthetic = generate_synthetic_data(df, 1000)
 
 # Load saved models
